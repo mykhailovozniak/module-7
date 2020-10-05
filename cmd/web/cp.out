@@ -1,0 +1,27 @@
+mode: set
+module-7/cmd/web/main.go:25.14,28.20 2 0
+module-7/cmd/web/main.go:32.2,44.16 7 0
+module-7/cmd/web/main.go:48.2,68.16 8 0
+module-7/cmd/web/main.go:28.20,30.3 1 0
+module-7/cmd/web/main.go:44.16,45.13 1 0
+module-7/cmd/web/main.go:68.16,70.3 1 0
+module-7/cmd/web/middlewares.go:8.53,9.75 1 1
+module-7/cmd/web/middlewares.go:9.75,14.26 3 1
+module-7/cmd/web/middlewares.go:18.3,19.57 2 1
+module-7/cmd/web/middlewares.go:14.26,16.4 1 0
+module-7/cmd/web/routes.go:7.47,19.2 8 1
+module-7/cmd/web/test_utils.go:17.52,22.2 3 1
+module-7/cmd/web/test_utils.go:24.62,28.2 2 1
+module-7/cmd/web/test_utils.go:30.84,32.16 2 1
+module-7/cmd/web/test_utils.go:36.2,38.16 3 1
+module-7/cmd/web/test_utils.go:42.2,42.39 1 1
+module-7/cmd/web/test_utils.go:32.16,34.3 1 0
+module-7/cmd/web/test_utils.go:38.16,40.3 1 0
+module-7/cmd/web/handlers.go:12.28,17.2 2 1
+module-7/cmd/web/handlers.go:19.86,27.2 5 1
+module-7/cmd/web/handlers.go:29.82,33.2 2 1
+module-7/cmd/web/handlers.go:35.81,38.29 2 1
+module-7/cmd/web/handlers.go:45.2,56.22 5 1
+module-7/cmd/web/handlers.go:74.2,82.21 6 1
+module-7/cmd/web/handlers.go:38.29,43.3 3 1
+module-7/cmd/web/handlers.go:56.22,72.3 9 1

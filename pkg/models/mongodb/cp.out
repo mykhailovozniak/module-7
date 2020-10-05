@@ -1,0 +1,10 @@
+mode: set
+module-7/pkg/models/mongodb/materials.go:16.72,21.16 4 1
+module-7/pkg/models/mongodb/materials.go:25.2,27.31 2 1
+module-7/pkg/models/mongodb/materials.go:37.2,37.34 1 1
+module-7/pkg/models/mongodb/materials.go:41.2,41.23 1 1
+module-7/pkg/models/mongodb/materials.go:21.16,23.3 1 0
+module-7/pkg/models/mongodb/materials.go:27.31,30.17 3 1
+module-7/pkg/models/mongodb/materials.go:34.3,34.43 1 1
+module-7/pkg/models/mongodb/materials.go:30.17,32.4 1 0
+module-7/pkg/models/mongodb/materials.go:37.34,39.3 1 0
