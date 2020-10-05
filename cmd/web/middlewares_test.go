@@ -15,6 +15,7 @@ func TestCorrelationId(t *testing.T) {
 		t.Fatal(err)
 	}
 	next := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		r.Header.Set("correlationId", "123-123")
 		w.Write([]byte("Hello world"))
 	})
 

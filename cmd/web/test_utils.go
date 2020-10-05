@@ -2,9 +2,11 @@ package main
 
 import (
 	"io/ioutil"
+	"log"
 	"module-7/pkg/models/mock"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"testing"
 )
 
@@ -13,7 +15,10 @@ type testServer struct {
 }
 
 func newTestApplication(t *testing.T) *application {
-	return &application{materials: &mock.MaterialModel{}}
+	infoLog := log.New(os.Stdout, "INFO\t", log.Ldate|log.Ltime)
+	errorLog := log.New(os.Stderr, "ERROR\t", log.Ldate|log.Ltime|log.Lshortfile)
+
+	return &application{materials: &mock.MaterialModel{}, infoLog: infoLog, errorLog: errorLog}
 }
 
 func newTestServer(t *testing.T, h http.Handler) *testServer {

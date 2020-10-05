@@ -7,11 +7,11 @@ import (
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"log"
-
-	"module-7/pkg/models"
 	"module-7/pkg/models/mongodb"
 	"net/http"
 	"os"
+
+	"module-7/pkg/models"
 )
 
 type application struct {

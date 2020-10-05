@@ -91,7 +91,7 @@ func TestPostHandlerExternalPost(t *testing.T) {
 	}
 }
 
-func TestMaterials(t *testing.T) {
+func TestMaterialsHandler(t *testing.T) {
 	app := newTestApplication(t)
 	ts := newTestServer(t, app.routes())
 	defer ts.Close()
@@ -106,5 +106,18 @@ func TestMaterials(t *testing.T) {
 
 	if string(body) != correctBody {
 		t.Errorf("body is not correct")
+	}
+}
+
+func TestHelloHandler(t *testing.T) {
+	app := newTestApplication(t)
+	ts := newTestServer(t, app.routes())
+	defer ts.Close()
+
+	code, _, body := ts.get(t, "/hello")
+	expectedBody := "Hello world"
+
+	if code != http.StatusOK || string(body) != expectedBody {
+		t.Errorf("Incorrect status code or body")
 	}
 }
