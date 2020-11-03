@@ -18,8 +18,9 @@ type application struct {
 	errorLog *log.Logger
 	infoLog *log.Logger
 	materials interface{
-		FindAll() ([]*models.Material, error)
+		FindAll(ctx context.Context) ([]*models.Material, error)
 	}
+	cache map[string] string
 }
 
 func main()  {
@@ -56,6 +57,7 @@ func main()  {
 		errorLog: errorLog,
 		infoLog: infoLog,
 		materials: &mongodb.MaterialsModel{Collection: database.Collection("materials")},
+		cache: make(map[string]string),
 	}
 
 	srv := &http.Server{

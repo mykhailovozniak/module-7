@@ -13,10 +13,11 @@ type MaterialsModel struct {
 	Collection *mongo.Collection
 }
 
-func (m *MaterialsModel) FindAll() (mat []*models.Material, err error) {
+func (m *MaterialsModel) FindAll(ctx context.Context) (mat []*models.Material, err error) {
 	findOptions := options.Find()
 	filter := bson.M{}
-	cur, err := m.Collection.Find(context.TODO(), filter, findOptions)
+
+	cur, err := m.Collection.Find(ctx, filter, findOptions)
 
 	if err != nil {
 		return nil, err
